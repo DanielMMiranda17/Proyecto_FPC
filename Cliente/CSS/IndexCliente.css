@@ -1,0 +1,362 @@
+/* Reinicio General */
+body, h1, h2, div, label, input, button, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos básicos */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #f4f4f9; /* Fondo blanco */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Sidebar y Top Bar combinados */
+.sidebar {
+    height: 100vh;
+    width: 0;
+    background-color: #13226ceb; /* Azul */
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #0f1b4f; /* Azul más oscuro */
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.top-bar {
+    height: 50px;
+    background-color: #13226ceb; /* Azul */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: margin-left 0.3s;
+}
+
+.menu-toggle {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.user-menu {
+    position: relative;
+}
+
+.user-menu button {
+    background-color: #13226ceb; /* Azul */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px; /* Botones más grandes */
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.dropdown a {
+    display: block;
+    padding: 15px 20px; /* Botones más grandes */
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.dropdown a:hover {
+    background-color: #f4f4f9; /* Fondo claro */
+}
+
+.user-menu:hover .dropdown {
+    display: block;
+}
+
+
+
+
+/* Sección: Cómo funciona */
+.how-it-works {
+    background-color: #f8f9fa;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .how-it-works h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .how-it-works .steps {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .how-it-works .step {
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  .how-it-works .step img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0.5rem;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+  }
+  
+  .how-it-works .step p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Sección: Cotizaciones */
+  .quote {
+    background-color: #e9ecef;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .quote h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  
+  .quote p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  .quote-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .quote-button:hover {
+    background-color: #0056b3;
+  }
+  
+/* Sección: Marcas atendidas */
+#marcas {
+    background-color: #f8f9fa;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#marcas h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.brands {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+
+.brand img {
+    width: 100px;
+    margin: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.brand img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+  /* Estilos para la galería de imágenes */
+#galeria {
+    background-color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para la sección de preguntas frecuentes */
+#preguntas-frecuentes {
+    background-color: #e9f4fa;
+    padding: 40px 0;
+}
+
+.faq {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.faq p {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq strong {
+    color: #13226ca9;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .faq {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+footer {
+    background-color: #13226c; /* Azul sólido */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Título principal */
+footer h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+/* Contenido del footer */
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    text-align: left;
+}
+
+/* Estilo del mapa */
+.mapa iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    border-radius: 8px;
+}
+
+/* Estilo de la información de contacto */
+.contact-info p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo de las redes sociales */
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    margin-bottom: 10px;
+}
+
+.social-media ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.social-media ul li a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Agendamiento</title>
+    <link rel="icon" href="nuevas img/image.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/Reservas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div class="container animate__animated animate__fadeIn">
+        <h1 class="title">Formulario de Agendamiento</h1>
+        <form id="agendamientoForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="proceso">Tipo de Proceso:</label>
+                    <select id="proceso" name="proceso" required>
+                        <option value="Porcelanizado">Porcelanizado</option>
+                        <option value="Brillada Básica">Brillada Básica</option>
+                        <option value="Desmanchado">Desmanchado</option>
+                        <option value="Alistamiento Interno">Alistamiento Interno</option>
+                        <option value="Lavado de Motor">Lavado de Motor</option>
+                        <option value="Latonería y Pintura Automotriz">Latonería y Pintura Automotriz</option>
+                        <option value="Lavado Interno">Lavado Interno</option>
+                        <option value="Lavado Externo">Lavado Externo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="dia">Día:</label>
+                    <input type="date" id="dia" name="dia" required>
+                </div>
+                <div class="form-group">
+                    <label for="hora">Hora Disponible:</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comentario">Comentario Adicional:</label>
+                <textarea id="comentario" name="comentario"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="politica" name="politica" required>
+                <label for="politica">Acepto la política de datos personales</label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Finalizar Reserva</button>
+                <button type="reset" class="btn btn-secondary">Cancelar</button>
+            </div>
+        </form>
+    </div>
+    <script src="Js/Reservas.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+    --color1: #1E3A8A; /* Azul oscuro */
+    --color2: #3B82F6; /* Azul claro */
+    --color3: #1F2937; /* Gris oscuro */
+    --fondo: #E5E7EB; /* Gris claro */
+    --border: #D1D5DB; /* Gris medio */
+    --btn-primary: #1E3A8A; /* Azul oscuro */
+    --btn-secondary: #9CA3AF; /* Gris claro */
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #1E3A8A, #3B82F6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: backgroundAnimation 10s infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+    0% { background: linear-gradient(135deg, #1E3A8A, #3B82F6); }
+    100% { background: linear-gradient(135deg, #3B82F6, #1E3A8A); }
+}
+
+.container{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    animation: containerAnimation 1s ease-in-out;
+}
+
+@keyframes containerAnimation {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-row{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-group{
+    margin-bottom: 15px;
+    flex: 1;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+    color: var(--color3);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color: var(--color2);
+}
+
+.form-group textarea{
+    resize: vertical;
+}
+
+.form-group input[type="checkbox"]{
+    width: auto;
+    margin-right: 10px;
+}
+
+.btn{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn-primary{
+    background-color: var(--btn-primary);
+    color: #fff;
+}
+
+.btn-secondary{
+    background-color: var(--btn-secondary);
+    color: #fff;
+}
+
+.btn:hover{
+    opacity: 0.9;
+    transform: translateY(-2px);
+}

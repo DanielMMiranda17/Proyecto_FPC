@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Latonería y Pintura Automotriz</title>
+    <link rel="icon" href="nuevas img/image.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/Cotizaciones.css">
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <img src="img/header.png" alt="Servicios de Latonería y Pintura Automotriz">
+        </div>
+        <h1 class="title">Nuestros Servicios</h1>
+        <div class="product-grid">
+            <div class="product-grid__item" data-id="1" data-name="Porcelanizado" data-price="50.00">
+                <div class="product-grid__imagen">
+                    <img src="img/whatsProcesos/porcelanizado1.jpg" alt="Porcelanizado">
+                </div>
+                <div class="product-grid__info">
+                    <p class="product-grid__name">Porcelanizado</p>
+                    <p class="product-grid__price">$50.00</p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart">Agregar al carrito</a>
+                </div>
+            </div>
+    
+            <div class="product-grid__item" data-id="2" data-name="Brillada Básica" data-price="30.00">
+                <div class="product-grid__imagen">
+                    <img src="img/whatsProcesos/brilladoBasico.jpg" alt="Brillada Básica">
+                </div>
+                <div class="product-grid__info">
+                    <p class="product-grid__name">Brillada Básica</p>
+                    <p class="product-grid__price">$30.00</p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart">Agregar al carrito</a>
+                </div>
+            </div>
+    
+            <div class="product-grid__item" data-id="3" data-name="Desmanchado" data-price="40.00">
+                <div class="product-grid__imagen">
+                    <img src="https://example.com/desmanchado.jpg" alt="Desmanchado">
+                </div>
+                <div class="product-grid__info">
+                    <p class="product-grid__name">Desmanchado</p>
+                    <p class="product-grid__price">$40.00</p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart">Agregar al carrito</a>
+                </div>
+            </div>
+    
+            <div class="product-grid__item" data-id="4" data-name="Alistamiento Interno" data-price="60.00">
+                <div class="product-grid__imagen">
+                    <img src="https://example.com/alistamiento_interno.jpg" alt="Alistamiento Interno">
+                </div>
+                <div class="product-grid__info">
+                    <p class="product-grid__name">Alistamiento Interno</p>
+                    <p class="product-grid__price">$60.00</p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart">Agregar al carrito</a>
+                </div>
+            </div>
+    
+            <div class="product-grid__item" data-id="5" data-name="Lavado de Motor" data-price="70.00">
+                <div class="product-grid__imagen">
+                    <img src="https://example.com/lavado_motor.jpg" alt="Lavado de Motor">
+                </div>
+                <div class="product-grid__info">
+                    <p class="product-grid__name">Lavado de Motor</p>
+                    <p class="product-grid__price">$70.00</p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart">Agregar al carrito</a>
+                </div>
+            </div>
+    
+            <div class="product-grid__item" data-id="6" data-name="Latonería y Pintura Automotriz" data-price="100.00">
+                <div class="product-grid__imagen">
+                    <img src="https://example.com/latoneria_pintura.jpg" alt="Latonería y Pintura Automotriz">
+                </div>
+                <div class="product-grid__info">
+                    <p class="product-grid__name">Latonería y Pintura Automotriz</p>
+                    <p class="product-grid__price">$100.00</p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart">Agregar al carrito</a>
+                </div>
+            </div>
+    
+            <div class="product-grid__item" data-id="7" data-name="Lavado Interno" data-price="80.00">
+                <div class="product-grid__imagen">
+                    <img src="https://example.com/lavado_interno.jpg" alt="Lavado Interno">
+                </div>
+                <div class="product-grid__info">
+                    <p class="product-grid__name">Lavado Interno</p>
+                    <p class="product-grid__price">$80.00</p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart">Agregar al carrito</a>
+                </div>
+            </div>
+    
+            <div class="product-grid__item" data-id="8" data-name="Lavado Externo" data-price="40.00">
+                <div class="product-grid__imagen">
+                    <img src="https://example.com/lavado_externo.jpg" alt="Lavado Externo">
+                </div>
+                <div class="product-grid__info">
+                    <p class="product-grid__name">Lavado Externo</p>
+                    <p class="product-grid__price">$40.00</p>
+                    <a href="#" class="product-grid__btn btn-default" data-btn-action="add-btn-cart">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+        <!--MODAL CARRITO-->
+        <div class="modal" id="jsModalCarrito">
+            <div class="modal__container">
+                <button type="button" class="modal__close fa-solid fa-xmark jsModalClose"></button>
+                <div class="modal__info">
+                    <div class="modal__header">
+                        <h2><i class="fa-brands fa-opencart"></i> Carrito</h2>
+                    </div>
+                    <div class="modal__body">
+                        <div class="modal__list" id="cartItems"></div>
+                    </div>
+                    <div class="modal__footer">
+                        <div class="modal__list-price">
+                            <ul>
+                                <li>Subtotal: <strong id="subtotal">$0.00</strong></li>
+                                <li>Descuento: <strong>$0.00</strong></li>
+                            </ul>
+                            <h4 class="modal__total-cart" id="totalCart">Total: $0.00</h4>
+                        </div>
+                        <div class="modal__btns">
+                            <a href="PRUEBA.HTML" class="btn-border">Ir al carrito</a>
+                            <a href="#" class="btn-primary">Agendar cita</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/Cotizaciones.js"></script>
+</body>
+</html>
+
