@@ -1,0 +1,194 @@
+*
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000 url(../img/fondo.jpg);
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor
+{
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+header 
+    {
+        width: 100%;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+header .menu a
+{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+header .menu a:hover
+{
+    text-decoration: underline;
+}
+
+.main
+{
+    background: #fff;
+    padding: 20px;
+    width: 70%;
+}
+
+.main article .imagen
+{
+    margin-bottom: 20px;
+
+}
+
+.main article .imagen img
+{
+    width: 100%;
+    vertical-align: top;
+}
+
+.main article h2
+{
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 32px;
+
+}
+
+.main article p
+{
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+aside
+{
+    width: 30%;
+    background: #537dca;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+aside .ad
+{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    padding: 50px 0;
+    background: #4264a2;
+}
+
+footer
+{
+    margin-top: 20px;
+    background: rgba(255, 255,255, .2);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+footer .redes a
+{
+    color: #fff;
+    text-decoration: underline;
+    margin-left: 20px;
+}
+footer .redes a:hover
+{
+    text-decoration: none;
+}
+
+@media (max-width: 800px) 
+{
+    main
+    {
+        width: 100%;
+    
+    }
+    aside {
+        width: 100%;
+        flex-direction: row;
+    }
+    aside .ad {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    header{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    header .menu a {
+        width: 100%;
+        background: rgba(255, 255,255, .2);
+        text-align: center;
+        padding: 20px;
+    }
+    
+    header .logo
+    {
+        margin-bottom: 20px;
+    }
+
+    header .menu a
+    {
+        margin:0 20px;
+
+    }
+    footer
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .autor
+    {
+        order:2;
+    }
+
+    footer .redes
+    {
+        order:1;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    aside
+    {
+        display: none;
+    }
+    
+}
