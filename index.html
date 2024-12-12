@@ -33,62 +33,73 @@
     
 <body>
     
-     <!-- cookies -->
-    <div id="cookie-alert" class="cookie-container">
-        <p>
-            Usamos cookies para garantizar que obtengas la mejor experiencia en nuestro sitio web. 
-            <a href="#info-legal" target="_blank">Más información</a>.
-        </p>
-        <button id="accept-cookies" class="cookie-btn">Aceptar</button>
-    </div>
+   <!-- Aviso de Cookies -->
+<div id="cookie-alert" class="cookie-container">
+    <p>
+        Usamos cookies para garantizar que obtengas la mejor experiencia en nuestro sitio web.
+        <a href="#info-legal" target="_blank">Más información</a>.
+    </p>
+    <button id="accept-cookies" class="cookie-btn">Aceptar</button>
+</div>
     
-    <!-- lOGIN -->
-    <header>
-        <h1>Full Paint Cars</h1>
-        <a href="Cliente/Login.html">
-            <button class="login-button" aria-label="Iniciar sesión">Iniciar sesión</button>
-        </a>
-        <a href="Cliente/Registrarse.html">
-            <button class="login-button" aria-label="Registrarse">Registrarse</button>
-        </a>
-    </header>
-    
-    
-
-    <!-- Navegación -->
-    <nav>
-        <a href="#cotizaciones">Cotizaciones</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#como-funciona">Cómo funciona</a>
-        <a href="#preguntas-frecuentes">FAQ</a>
-        <a href="#contacto">Contacto</a>
+ <!-- Login Section -->
+<header>
+    <h1>Full Paint Cars</h1>
+    <nav class="button-container">
+        <a href="Cliente/Login.html" class="login-button" aria-label="Iniciar sesión">Iniciar sesión</a>
+        <a href="Cliente/Registrarse.html" class="login-button" aria-label="Registrarse">Registrarse</a>
     </nav>
+</header>
 
-     
+    
+    
+
+<button id="menu-toggle" class="menu-icon">
+    &#9776; <!-- Ícono de menú (tres líneas) -->
+</button>
+
+<nav id="nav-menu">
+    <a href="Cotizaciones.html">Cotizaciones</a>
+    <a href="#como-funciona">Cómo funciona</a>
+    <a href="#preguntas-frecuentes">Preguntas Frecuentes</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+    <!-- Cotizaciones -->
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="img/Home.png" alt="brum" >
+            <img src="img/Mission.png" alt="Imagen 2">
+            <a href="Cotizaciones.html"><img src="img/Services.png" alt="Imagen 3"></a>
+            <img src="img/Testimonials.png" alt="Imagen 4">
+            <img src="img/Contact.png" alt="Imagen 5">
+        </div>
+        <button class="carousel-prev" onclick="moveSlide(-1)">❮</button>
+        <button class="carousel-next" onclick="moveSlide(1)">❯</button>
+    </div>
+    <br>
+          
+    <div >
+        <center><a href="Cotizaciones.html"><button class="quote-button">Cotizar ahora</button></a></center>
+    </div>
+
     <!-- Cómo funciona -->
     <section id="como-funciona" class="how-it-works">
         <h3>¿Cómo funciona Full Paint Cars?</h3>
         <div class="steps">
             <div class="step">
-                <img src="img/whatsProcesos/registra.jpg" alt="Paso 1">
+                <img src="img/whatsProcesos/registra.jpg" alt="Paso 1" height="100px" width="90px">
                 <p>Registra tu vehículo</p>
             </div>
             <div class="step">
-                <img src="img/whatsProcesos/servicio.jpg" alt="Paso 2">
+                <img src="img/servicio.jpg" alt="Paso 2" height="100px" width="90px">
                 <p>Elige un servicio</p>
             </div>
             <div class="step">
-                <img src="img/whatsProcesos/timereal.jpg" alt="Paso 3">
+                <img src="img/whatsProcesos/timereal.jpg" alt="Paso 3" height="100px" width="90px">
                 <p>Observa el progreso en tiempo real</p>
             </div>
         </div>
-    </section>
-
-    <!-- Cotizaciones -->
-    <section id="cotizaciones" class="quote">
-        <h2>Cotiza y reserva al instante</h2>
-        <p>Obtén precios inmediatos para el servicio que necesita tu vehículo. Garantía asegurada en todos los servicios y atención a domicilio.</p>
-        <button class="quote-button">Cotizar ahora</button>
     </section>
 
     <!-- Marcas atendidas -->
@@ -104,11 +115,11 @@
                 <p>Chevrolet</p>
             </div>
             <div class="brand">
-                <img src="img/Marcas/ford.png" alt="Ford" height="100px" width="90px">
+                <img src="img/Marcas/ford-removebg-preview.png" alt="Ford" height="100px" width="90px">
                 <p>Ford</p>
             </div>
             <div class="brand">
-                <img src="img/Marcas/nissan.png" alt="Nissan" height="100px" width="90px">
+                <img src="img/Marcas/nissan-removebg-preview.png" alt="Nissan" height="100px" width="90px">
                 <p>Nissan</p>
             </div>
             <div class="brand">
@@ -116,7 +127,7 @@
                 <p>Suzuki</p>
             </div>
             <div class="brand">
-                <img src="img/Marcas/mitsubichi.png" alt="Mitsubishi" height="100px" width="90px">
+                <img src="img/Marcas/mitsubichi-removebg-preview.png" alt="Mitsubishi" height="100px" width="90px">
                 <p>Mitsubishi</p>
             </div>
             <div class="brand">
@@ -124,12 +135,24 @@
                 <p>Mazda</p>
             </div>
             <div class="brand">
-                <img src="img/Marcas/honda.png" alt="Honda" height="100px" width="90px">
+                <img src="img/Marcas/honda-removebg-preview.png" alt="Honda" height="100px" width="90px">
                 <p>Honda</p>
             </div>
             <div class="brand">
-                <img src="img/Marcas/BMW.png" alt="BMW" height="100px" width="90px">
+                <img src="img/Marcas/BMW-removebg-preview.png" alt="BMW" height="100px" width="90px">
                 <p>BMW</p>
+            </div>
+            <div class="brand">
+                <img src="img/Marcas/kia.png" alt="KIA" height="100px" width="90px">
+                <p>KIA</p>
+            </div>
+            <div class="brand">
+                <img src="img/Marcas/Volkswagen.png" alt="Volkswagen" height="100px" width="90px">
+                <p>Volkswagen</p>
+            </div>
+            <div class="brand">
+                <img src="img/Marcas/Hyundai.png" alt="Hyundai" height="100px" width="90px">
+                <p>Hyundai</p>
             </div>
         </div>
     </section>
@@ -144,30 +167,29 @@
         </div>
     </section>
 
-    <!-- Preguntas frecuentes -->
-    <section id="preguntas-frecuentes">
-        <h2>Preguntas frecuentes</h2>
-        <div class="faq">
-            <p><strong>1. ¿Cuánto tiempo toma el servicio?</strong> Depende del servicio, pero en promedio, entre 1 y 3 días.</p>
-            <p><strong>2. ¿Cuentan con garantía?</strong> Sí, todos nuestros servicios tienen garantía.</p>
-            <p><strong>3. ¿Ofrecen servicio a domicilio?</strong> Sí, contamos con atención a domicilio en Bogotá.</p>
-        </div>
-    </section>
-
-     <!-- Contacto y Ubicación -->
+   <!-- Preguntas frecuentes -->
+<section id="preguntas-frecuentes">
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq">
+        <p><strong class="faq-question">1. ¿Cuánto tiempo toma el servicio?</strong> <span class="faq-answer">Depende del servicio, pero en promedio, entre 1 y 3 días.</span></p>
+        <p><strong class="faq-question">2. ¿Cuentan con garantía?</strong> <span class="faq-answer">Sí, todos nuestros servicios tienen garantía.</span></p>
+        <p><strong class="faq-question">3. ¿Ofrecen servicio a domicilio?</strong> <span class="faq-answer">Sí, contamos con atención a domicilio en Bogotá.</span></p>
+    </div>
+</section>
+    <!-- Contacto y Ubicación -->
     <footer>
-       
         <section id="contacto" class="contact-section">
             <h2>Contacto</h2>
             <div class="contact-container">
                 <div class="address">
                     <h3>Sede única</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d873.8498272142588!2d-74.0664273876182!3d4.669438454140227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9af9d9d3d4b5%3A0x14fb36e73760a458!2sCra.%2027a%20%2378-39%2C%20Bogot%C3%A1!5e1!3m2!1ses-419!2sco!4v1732138152928!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d873.8498272142588!2d-74.0664273876182!3d4.669438454140227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9af9d9d3d4b5%3A0x14fb36e73760a458!2sCra.%2027a%20%2378-39%2C%20Bogot%C3%A1!5e1!3m2!1ses-419!2sco!4v1732138152928!5m2!1ses-419!2sco" width="100" height="410" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="contact-info">
                     <h3>Información de contacto</h3>
                     <p><strong>Teléfono:</strong> +57 123 456 7890</p>
                     <p><strong>Email:</strong> <a href="mailto:contacto@fpc.com.co">contacto@fpc.com.co</a></p>
+                   
                 </div>
                 <div class="social-media">
                     <h3>Síguenos</h3>
@@ -175,24 +197,26 @@
                         <li class="icon facebook">
                             <a href="https://facebook.com" target="_blank">
                                 <span><i class="fab fa-facebook-f"></i></span>
-                                <div class="tooltip">Facebook</div>
+                                <div class="tooltip">FullPaintCars</div>
                             </a>
                         </li>
-                        <li class="icon youtube">
-                            <a href="https://youtube.com" target="_blank">
-                                <span><i class="fab fa-youtube"></i></span>
-                                <div class="tooltip">YouTube</div>
+                        <li class="icon instagram">
+                            <a href="https://instagram.com" target="_blank">
+                                <span><i class="fab fa-instagram"></i></span>
+                                <div class="tooltip">FullPaintCars</div>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
+            <p>Ofrecemos servicios completos de Full Paint Cars, garantizando la restauración y personalización total de tu vehículo. Ya sea que necesites renovar el color de tu coche, eliminar imperfecciones o darle un toque único con detalles personalizados, nuestro equipo de expertos utiliza técnicas avanzadas y materiales de alta calidad para lograr resultados impecables. Contamos con amplia experiencia en la pintura de vehículos, ofreciendo soluciones duraderas y estéticamente sobresalientes. Si deseas mejorar el aspecto de tu automóvil y asegurar un acabado profesional, ¡contáctanos para más información!</p>
         </section>
     </footer>
-    
+
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="Proyecto FPC/JS/Login.js"></script>
     <script src="Cliente/JS/Alerta.js"></script>
+    <script src="js/index.js"></script>
 
 </body>
 </html>

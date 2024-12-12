@@ -23,7 +23,8 @@
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
-    background: linear-gradient(to right, #2E3B4E, #A5A6A7, #D1D3D4, #4E5B6E, #6C7B8C);
+    background-image: url(../Cliente/IMG/ford-truck-.jpg);
+    background-size: cover;
     color: var(--negro);
 }
 
@@ -33,33 +34,33 @@ body {
     position: relative;
 }
 
-/* Contenido principal */
-.contenido-principal {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--blanco);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border-radius: 6px;
-    max-width: 50%;
-    margin: auto;
+/* Contenido principal */  
+.contenido-principal {  
+    flex: 1;  
+    padding: 20px;  
+    display: flex;  
+    flex-direction: column;  
+    gap: 20px;  
+    justify-content: center;  
+    align-items: center;  
+    background-color: rgba(0, 0, 0, 0.7) !important; /* Negro con 50% de transparencia */  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  
+    border-radius: 6px;  
+    max-width: 50%;  
+    margin: auto;  
 }
 
 .contenido-principal h1 {
     font-size: 30px;
     font-weight: 300;
-    color: var(--negro);
+    color: var(--blanco);
     margin-bottom: 20px;
 }
 
 .contenido-principal form label {
     font-size: 18px;
     font-weight: 500;
-    color: var(--negro);
+    color: var(--blanco);
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -77,6 +78,7 @@ body {
     margin-bottom: 10px;
     transition: border var(--transicion);
 }
+
 
 .contenido-principal form input:focus,
 .contenido-principal form select:focus {

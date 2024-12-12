@@ -85,7 +85,7 @@
              </nav>
 
              <!-- Tabla de procesos para los automoviles-->
-              <div class="tabla">
+              <div class="tabla" id="tabla-procesos">
               <table>
                 <thead>
                   <tr>
@@ -97,12 +97,13 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Pintura</td>
-                        <td>80.000-150.000</td>
-                        <td>Estos procesos ayudan a cuidar la estética de tu automóvil.</td>
+                        <td>Porcelanizado</td>
+                        <td>$150.000</td>
+                        <td>Tratamiento que brinda brillo intenso y protección a superficies de cerámica <br>
+                            o pintura. Ideal para mantener el acabado de los vehículos.</td>
                         <td>
                             <a href="#" target="_blank">
-                                <img class="imagen" src="img/carro 1.avif" alt="Procesos para el Detalle Automotriz" height="100" width="200">
+                                <img class="imagen" src="img/whatsProcesos/porcelanizado1.jpg" alt="Procesos para el Detalle Automotriz" height="100" width="200">
                             </a></td>
                         <td style="background-color: #e0e0e0"><div class="botones">
                             <button class="modificar-proceso">Modificar</button>
@@ -111,12 +112,13 @@
                           </div></td>
                     </tr>
                     <tr>
-                        <td>Procesos para la Detalle Automotriz</td>
-                        <td>1500 USD</td>
-                        <td>Estos procesos ayudan a cuidar la estética de tu automóvil.</td>
+                        <td>Brillado Básico</td>
+                        <td>$120.000</td>
+                        <td>Proceso de pulido que mejora el brillo y apariencia de la pintura del auto, <br>
+                             eliminando pequeñas imperfecciones.</td>
                         <td>
                             <a href="#" target="_blank">
-                            <img class="imagen" src="img/carr03.webp" alt="Procesos para el Detalle Automotriz" height="100" width="200">
+                            <img class="imagen" src="img/whatsProcesos/brilladoBasico.jpg" alt="Procesos para el Detalle Automotriz" height="100" width="200">
                         </a></td>
                         <td style="background-color: #e0e0e0"> <!-- botones para cada proceso modificar-eliminar-->
                             <div class="botones">
@@ -127,12 +129,13 @@
                     </tr>
 
                     <tr>
-                        <td>Procesos para la Detalle Automotriz</td>
-                        <td>2000 USD</td>
-                        <td>Estos procesos ayudan a cuidar la estética de tu automóvil.</td>
+                        <td>Desmanchado	</td>
+                        <td>$80.000</td>
+                        <td>Servicio que elimina manchas difíciles y suciedad persistente de tapicerías <br>
+                             y superficies interiores.</td>
                         <td>
                             <a href="#" target="_blank">
-                            <img class="imagen" src="img/carro 1.avif" alt="Procesos para el Detalle Automotriz" height="100" width="200">
+                            <img class="imagen" src="img/desmanchado.jpg" alt="Procesos para el Detalle Automotriz" height="100" width="200">
                             </a></td>
                             <td style="background-color: #e0e0e0">
                             <div class="botones">
@@ -143,12 +146,74 @@
                     </tr>
 
                     <tr>
-                        <td>Procesos para la Detalle Automotriz</td>
-                        <td>2500 USD</td>
-                        <td>Estos procesos ayudan a cuidar la estética de tu automóvil.</td>
+                        <td>Aislamiento Interno</td>
+                        <td>$200.000</td>
+                        <td>Aplicación de material aislante en el interior del vehículo para mejorar <br>
+                             el confort acústico y térmico.</td>
                         <td>
                             <a href="#" target="_blank">
-                            <img class="imagen" src="img/carr03.webp" alt="Procesos para el Detalle Automotriz" height="100" width="200"></td>
+                            <img class="imagen" src="img/alistamiento.jpg" alt="Procesos para el Detalle Automotriz" height="100" width="200"></td>
+                        <td style="background-color: #e0e0e0">
+                            <div class="botones">
+                                <button class="modificar-proceso">Modificar</button>
+                              <button class="eliminar" id="delate">Eliminar</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Lavado de Motor</td>
+                        <td>$50.000</td>
+                        <td>Limpieza del motor del vehículo para eliminar grasa, suciedad y restos de aceite, <br>
+                            mejorando su rendimiento y aspecto.</td>
+                        <td>
+                            <a href="#" target="_blank">
+                            <img class="imagen" src="img/lavado_motor.avif" alt="Procesos para el Detalle Automotriz" height="100" width="200"></td>
+                        <td style="background-color: #e0e0e0">
+                            <div class="botones">
+                                <button class="modificar-proceso">Modificar</button>
+                              <button class="eliminar" id="delate">Eliminar</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Latonería <br>
+                            y Pintura Automotriz</td>
+                        <td>$400.000</td>
+                        <td>Servicios de reparación de la carrocería y repintado para restaurar el aspecto <br>
+                            original del vehículo.</td>
+                        <td>
+                            <a href="#" target="_blank">
+                            <img class="imagen" src="img/Pintuco.avif" alt="Procesos para el Detalle Automotriz" height="100" width="200"></td>
+                        <td style="background-color: #e0e0e0">
+                            <div class="botones">
+                                <button class="modificar-proceso">Modificar</button>
+                              <button class="eliminar" id="delate">Eliminar</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Lavado Interno</td>
+                        <td>$60.000</td>
+                        <td>Limpieza profunda del interior del vehículo, incluyendo alfombras, <br>
+                             asientos y paneles.</td>
+                        <td>
+                            <a href="#" target="_blank">
+                            <img class="imagen" src="img/lavadoInterior.jpg" alt="Procesos para el Detalle Automotriz" height="100" width="200"></td>
+                        <td style="background-color: #e0e0e0">
+                            <div class="botones">
+                                <button class="modificar-proceso">Modificar</button>
+                              <button class="eliminar" id="delate">Eliminar</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Lavado Externo</td>
+                        <td>$40.000</td>
+                        <td>.Limpieza completa del exterior del vehículo para remover polvo, <br>
+                            suciedad y restos de insectos.</td>
+                        <td>
+                            <a href="#" target="_blank">
+                            <img class="imagen" src="img/lavadoExterno.jpg" alt="Procesos para el Detalle Automotriz" height="100" width="200"></td>
                         <td style="background-color: #e0e0e0">
                             <div class="botones">
                                 <button class="modificar-proceso">Modificar</button>

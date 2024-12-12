@@ -53,7 +53,7 @@ function checkEmail(email) {
 
 email.addEventListener("input", function () {
   if (!checkEmail(email.value)) {
-    emailError.textContent = "*Email is not valid";
+    emailError.textContent = "*Correo no valido";
   } else {
     emailError.textContent = "";
   }
@@ -62,9 +62,9 @@ email.addEventListener("input", function () {
 // Check length input user name
 username.addEventListener("input", function () {
   if (username.value.length < 4) {
-    usernameError.textContent = "*Username must be at least 8 characters.";
+    usernameError.textContent = "*El usuario debe tener menos de 4 caracteres.";
   } else if (username.value.length > 20) {
-    usernameError.textContent = "*Username must be less than 20 characters.";
+    usernameError.textContent = "*El usuario debe tener menos de 20 caracteres.";
   } else {
     usernameError.textContent = "";
   }
@@ -72,10 +72,10 @@ username.addEventListener("input", function () {
 
 // Check length input password
 password.addEventListener("input", function () {
-  if (password.value.length < 8) {
-    passwordError.textContent = "*Password must be at least 8 characters.";
+  if (password.value.length < 4) {
+    passwordError.textContent = "*La contraseña debe de tener menos de 20 caracteres.";
   } else if (password.value.length > 20) {
-    passwordError.textContent = "*Password must be less than 20 characters.";
+    passwordError.textContent = "*La contraseña debe tener menos de 20 caracteres.";
   } else {
     passwordError.textContent = "";
   }
@@ -139,7 +139,7 @@ function checkEmail2(lgEmail) {
 
 lgEmail.addEventListener("input", function () {
   if (!checkEmail2(lgEmail.value)) {
-    lgEmailError.textContent = "*Email is not valid";
+    lgEmailError.textContent = "*Correo no valido";
   } else {
     lgEmailError.textContent = "";
   }
@@ -147,10 +147,10 @@ lgEmail.addEventListener("input", function () {
 
 // Check length input password
 lgPassword.addEventListener("input", function () {
-  if (lgPassword.value.length < 8) {
-    lgPasswordError.textContent = "*Password must be at least 8 characters.";
+  if (lgPassword.value.length < 4) {
+    lgPasswordError.textContent = "*La contraseña debe tener al menos 4 caracteres.";
   } else if (lgPassword.value.length > 20) {
-    lgPasswordError.textContent = "*Password must be less than 20 characters.";
+    lgPasswordError.textContent = "*La contraseña debe tener menos de 20 caracteres.";
   } else {
     lgPasswordError.textContent = "";
   }
@@ -160,7 +160,7 @@ function checkRequiredLg(inputArr2) {
   let isRequiredLg = false;
   inputArr2.forEach(function (input) {
     if (input.value.trim() === '') {
-      showError2(input, `*${getFieldNameLg(input)} Please enter your information in this field`);
+      showError2(input, `*${getFieldNameLg(input)} Por favor ingresa tu información en este campo`);
       isRequiredLg = true;
     } else {
       showSuccess2(input);
@@ -175,11 +175,11 @@ function getFieldNameLg(input) {
 lgForm.addEventListener('submit', function (e) {
   e.preventDefault();
   if (!checkRequiredLg([lgEmail, lgPassword])) {
-      if (lgEmail.value === 'oscarcruzsena2006@gmail.com' && lgPassword.value === '12345678') {
+      if (lgEmail.value === 'oscar@gmail.com' && lgPassword.value === '1234') {
           window.location.href = '/Cliente/IndexCliente.html';
-      } else if (lgEmail.value === 'johandanielmirandamoreno@gmail.com' && lgPassword.value === '12345678') {
+      } else if (lgEmail.value === 'johan@gmail.com' && lgPassword.value === '1234') {
           window.location.href = '/adminPrincipal.html';
-      } else if (lgEmail.value === 'empleado@gmail.com' && lgPassword.value === '12345678') {
+      } else if (lgEmail.value === 'empleado@gmail.com' && lgPassword.value === '1234') {
           window.location.href = '/empleado/empleado.html';
       } else {
           lgPasswordError.textContent = "*Email o contraseña incorrectos";

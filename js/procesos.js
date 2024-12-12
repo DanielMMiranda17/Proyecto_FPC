@@ -137,3 +137,87 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     });
+
+    document.addEventListener('DOMContentLoaded', function() {  
+    const tablaPrincipal = document.getElementById('tabla-principal').getElementsByTagName('tbody')[0];  
+    const tablaAdicional = document.getElementById('tabla-adicional').getElementsByTagName('tbody')[0];  
+
+    function eliminarProceso(boton) {  
+        const fila = boton.closest('tr');  
+        const filas = tablaPrincipal.getElementsByTagName('tr');  
+
+        // Mover la fila a la tabla adicional  
+        if (filas.length > 2) {  
+            tablaAdicional.appendChild(fila);  
+        } else {  
+            // Si no hay más filas en la tabla principal, eliminar la fila  
+            fila.remove();  
+        }  
+
+        // Si no quedan filas en la tabla principal, ocultar la tabla  
+        if (filas.length <= 1) {  
+            document.getElementById('tabla-principal').style.display = 'none';  
+        }  
+
+        // Mostrar la tabla adicional si tiene elementos  
+        if (tablaAdicional.childElementCount > 0) {  
+            document.getElementById('tabla-adicional').style.display = 'block';  
+        }  
+    }  
+});
+
+
+
+
+
+
+document.getElementById('form-agregar').addEventListener('submit', function(event) {  
+    event.preventDefault(); // Evita que el formulario se envíe de la manera tradicional  
+
+    // Obtener los valores del formulario  
+    const nombre = document.getElementById('agregar-nombre').value;  
+    const valor = document.getElementById('agregar-valor').value;  
+    const descripcion = document.getElementById('agregar-descripcion').value;  
+
+    // Manejo de la imagen (opcional)  
+    const imgUpload = document.getElementById('img-upload-agregar').files[0];  
+    let imgSrc = '';  
+    if (imgUpload) {  
+        const reader = new FileReader();  
+        reader.onload = function(e) {  
+            imgSrc = e.target.result;  
+            agregarFila(nombre, valor, descripcion, imgSrc);  
+        }  
+        reader.readAsDataURL(imgUpload);  
+    } else {  
+        agregarFila(nombre, valor, descripcion, imgSrc);  
+    }  
+
+    // Limpiar el formulario  
+    this.reset();  
+});  
+
+function agregarFila(nombre, valor, descripcion, imgSrc) {  
+    const tabla = document.getElementById('tabla-procesos').getElementsByTagName('tbody')[0];  
+    const nuevaFila = tabla.insertRow();  
+
+    // Crear celdas para la nueva fila  
+    const celdaNombre = nuevaFila.insertCell(0);  
+    const celdaValor = nuevaFila.insertCell(1);  
+    const celdaDescripcion = nuevaFila.insertCell(2);  
+    const celdaImagen = nuevaFila.insertCell(3);  
+
+    // Asignar valores a las celdas  
+    celdaNombre.textContent = nombre;  
+    celdaValor.textContent = valor;  
+    celdaDescripcion.textContent = descripcion;  
+
+    // Crear y asignar la imagen  
+    if (imgSrc) {  
+        const img = document.createElement('img');  
+        img.src = imgSrc;  
+        img.alt = 'Imagen del proceso';  
+        img.style.width = '50px'; // Ajusta el tamaño de la imagen si es necesario  
+        celdaImagen.appendChild(img);  
+    }  
+}  
