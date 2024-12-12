@@ -196,7 +196,7 @@ align-items:end;
 white-space: nowrap;
 overflow: hidden;
 text-overflow: ellipsis;
-max-width: 100px;
+max-width: 90px;
 word-break: break-word;
 align-content: center;
 justify-content: center;
