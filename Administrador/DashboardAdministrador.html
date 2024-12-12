@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery 3.7.1 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Cargar DataTables CSS -->
+    <link href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" rel="stylesheet">
+
+    <!-- Cargar DataTables JS -->
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/DashboardAdmin.css">
+
+
+    <title>Administrador</title>
+</head>
+<body>
+    <div class="contenedor-dashboard">
+        <aside class="barra-lateral">
+            <div class="logo">
+                <img src="../img/Logo.png" alt="logo" width="90" height="90">
+                <h2>Administrador</h2>
+            </div>
+            <nav class="menu">
+                <a href="#" class="opcion">
+                    <span class="material-icons">person</span>
+                    Usuario
+                </a>
+                <a href="#" class="opcion">
+                    <span class="material-icons">shopping_cart</span>
+                    Productos
+                </a>
+                <a href="#" class="opcion">
+                    <span class="material-icons">attach_money</span>
+                    Ventas
+                </a>
+                <a href="../Administrador/DashboardAdministradorReportes.html" class="opcion">
+                    <span class="material-icons">attach_money</span>
+                    Reportes
+                </a>
+                <a href="../index.html" class="opcion">
+                    <span class="material-icons">exit_to_app</span>
+                    Salir
+                </a>
+            </nav>
+        </aside>
+
+        <main class="contenido-principal">
+            <div class="cards">
+                <div class="card">
+                    <span class="material-icons">trending_up</span>
+                    <h3>Proyeccion</h3>
+                </div>
+                <div class="card">
+                    <span class="material-icons">assessment</span>
+                    <h3>Estadisticas</h3>
+                </div>
+                <div class="card">
+                    <span class="material-icons">shopping_cart</span>
+                    <h3>Ventas</h3>
+                </div>
+            </div>
+
+            <h1>Gestion de usuario</h1>
+            <div class="contenedor-tabla">
+                <table id="tablaUsuarios">
+                    <thead>
+                        <tr>
+                            <th>Identificación</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th>Direccion</th>
+                            <th>Modificar</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td>12345</td>
+                            <td>Juan</td>
+                            <td>Esteban</td>
+                            <td>calle 180</td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">edit</span>
+                            </button></td>
+                            <td><button class="btn.icon">
+                                <span class="material-icons">delete</span>
+                            </button></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <div class="contenedor-botones">
+                    <button class="boton-pdf">
+                        <span class="material-icons">picture_as_pdf</span>
+                        Generar PDF
+                    </button>
+                    <button class="boton-xls">
+                        <span class="material-icons">grid_view</span>
+                        Generar XLS
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/dataTableAdmin.js"></script>
+
+</body>
+</html>

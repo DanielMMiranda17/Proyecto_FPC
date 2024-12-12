@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- chart js -->
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <script  type= "module" src="../js/reportesadmin.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/DashboardAdmin.css">
+
+
+    <title>Administrador</title>
+</head>
+<body>
+    <div class="contenedor-dashboard">
+        <aside class="barra-lateral">
+            <div class="logo">
+                <img src="../img/Logo.png" alt="logo" width="90" height="90">
+                <h2>Administrador</h2>
+            </div>
+            <nav class="menu">
+                <a href="#" class="opcion">
+                    <span class="material-icons">person</span>
+                    Usuario
+                </a>
+                <a href="#" class="opcion">
+                    <span class="material-icons">shopping_cart</span>
+                    Productos
+                </a>
+                <a href="#" class="opcion">
+                    <span class="material-icons">attach_money</span>
+                    Reportes
+                </a>
+                <a href="../index.html" class="opcion">
+                    <span class="material-icons">exit_to_app</span>
+                    Salir
+                </a>
+            </nav>
+        </aside>
+
+        <main class="contenido-principal">
+            <div class="cards">
+                <div class="card">
+                    <span class="material-icons">trending_up</span>
+                    <h3>Proyeccion</h3>
+                </div>
+                <div class="card">
+                    <span class="material-icons">assessment</span>
+                    <h3>Estadisticas</h3>
+                </div>
+                <div class="card">
+                    <span class="material-icons">shopping_cart</span>
+                    <h3>Ventas</h3>
+                </div>
+            </div>
+
+           <center> <h1>Panel de Estadisticas</h1></center>
+
+            <div class="contenedor-graficos">
+                <div class="grafico">
+                    <p>Ventas por mes</p>
+                    <canvas id="VentasMes"></canvas>
+                </div>
+
+                <div class="grafico">
+                    <p>Servicios mas solicitados</p>
+                    <canvas id="ServiciosSolicitados"></canvas>
+                </div>
+
+                <div class="grafico">
+                    <p>Mejores Clientes</p>
+                    <canvas id="MejoresClientes"></canvas>
+                </div>
+
+                <div class="grafico">
+                    <p>Top Productos Maskot</p>
+                    <canvas id="TopProductos"></canvas>
+                </div>
+
+                
+            </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/reportesAdmin.js"></script>
+
+</body>
+</html>
